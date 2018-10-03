@@ -15,6 +15,9 @@ static string thumbContainerName = System.Environment.GetEnvironmentVariable("my
 
 public static async Task Run(EventGridEvent myEvent, Stream inputBlob, TraceWriter log)
 {
+string test = null;
+int testLength = test.length;
+
     log.Info(myEvent.ToString());
 
     // Instructions to resize the blob image.
